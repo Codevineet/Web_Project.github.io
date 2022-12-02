@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign IN</title>
+    <!-- <link rel="stylesheet" href="css/sign_in.css"> -->
+
+    <!-- person -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- lock -->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+</head>
+<body>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #f2efea;
+  /* background-color: antiquewhite; */
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.clip {
+  clip-path: circle(73% at 3% 72%);
+  /* background-color: #20dbc2; */
+  background-color: #66d7d1;
+  position: absolute;
+  top: -0.4rem;
+  left: 0;
+  z-index: -1;
+  width: 70rem;
+  height: 41rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 43rem;
+  height: 20rem;
+  position: relative;
+  z-index: -1;
+  top: 20rem;
+  /* overflow: hidden; */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.form-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* border: 2px solid black; */
+}
+
+form {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0rem;
+  right: 0rem;
+  width: 40rem;
+  height: 40rem;
+  align-items: center;
+  /* border: 2px solid black; */
+  padding: 4rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  margin: 1.3rem 0;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #0c0c0c;
+  font-size: 2rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-size: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.button {
+  width: 8.5rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1.3rem 0;
+  color: white;
+  background-color: #2f4858;
+  /* background-color: #20dbc2;
+    color: white; */
+}
+
+.button:hover {
+  background-color: #00bfa6;
+  cursor: pointer;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid black;
+  margin: 0 0.45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  border-color: #00bfa6;
+}
+
+.fb:hover {
+  background-color: #4267b2;
+  color: white;
+}
+
+.goog:hover {
+  background: linear-gradient(45deg, #3cba54, #f4c20d, #db3236, #4885ed);
+  color: white;
+}
+
+.twit:hover {
+  background-color: #00acee;
+  color: whitesmoke;
+}
+
+.linkden:hover {
+  background-color: #0a66c2;
+  color: whitesmoke;
+}
+
+.content {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 4rem;
+  left: 7rem;
+  width: 30rem;
+  padding: 1rem 0.4rem;
+  /* border: 2px solid black; */
+}
+
+.content h3,
+p {
+  margin-bottom: 1rem;
+}
+
+.transp-btn {
+  padding:0.7rem 2.5rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 1.3rem 0;
+  color: white;
+  background-color: #2F4858;
+  text-decoration: none;
+  /* background-color: #1c6c61;
+  color: white; */
+}
+
+.transp-btn:hover {
+  cursor: pointer;
+  background-color: #1c6c35;
+}
+
+    </style>
+    <div class="clip"></div>
+    <div class="conatainer">
+        <div class="form-container">
+            <div class="sign-in">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">LOG IN</h2>
+
+                    <div class="input-field">
+                        <i class="material-symbols-outlined">
+                            person
+                        </i>
+                        <input type="text" placeholder="Username">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-symbols-outlined">
+                            lock
+                        </i>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <input type="submit" class="button" value="Login">
+                    <p class="social-text">Or Sign In with Social Platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon fb"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon goog"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="social-icon twit"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon linkden"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p class="text">Welcome to offical page of BML Alumni join us extravagent journey</p>
+                    <a href="Sign_up.html" class="transp-btn" id="Sign-UP"> LOG IN</a>
+                </div>
+                <img src="../Photos/count-pic.jpg" alt="login" class="image">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/8795b2d1d3.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
